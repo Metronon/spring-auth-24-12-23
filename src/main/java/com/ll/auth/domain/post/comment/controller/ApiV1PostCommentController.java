@@ -83,7 +83,7 @@ public class ApiV1PostCommentController {
                 reqBody.content
         );
 
-        em.flush();
+        postService.flush();
 
         return new RsData<>(
                 "201-1",
